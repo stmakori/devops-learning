@@ -18,7 +18,7 @@ what I did, what changed, and the problems I solved along the way.
 - [x] Install Build Tools
 - [x] Windows Installation – Part 1
 - [x] Windows Installation – Part 2
-- [ ] Build Artifact – build the Gradle and Maven projects
+- [x] Build Artifact – built the Gradle, Maven and JavaScript artifacts ([notes](01-build-tools#build-artifact))
 - [ ] Build Tools for Development – add a new dependency to a project
 - [ ] Run/Start the application
 - [ ] Build JavaScript applications

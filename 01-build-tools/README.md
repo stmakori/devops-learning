@@ -28,6 +28,36 @@ Upgrading them was a lesson in itself:
 | webpack / gulp | 4 / 4 | **5 / 5** | gulp 5 needs `{ encoding: false }` for binary files |
 | Docker base images | `openjdk:8`, `node:10` | `eclipse-temurin:21-jre-alpine`, `node:24` | `openjdk` images are deprecated |
 
+## Build Artifact
+
+An **artifact** is the packaged, ready-to-run output of a build – the thing that gets deployed,
+instead of the source code. Build once, then deploy the same artifact to every environment.
+
+Artifacts I built from this module's projects:
+
+| Project | Command | Artifact | Size |
+|---|---|---|---|
+| java-gradle-app | `./gradlew build` | `build/libs/java-app-1.0-SNAPSHOT.jar` | 19.5 MB |
+| java-maven-app | `mvn package` | `target/java-maven-app-1.1.0-SNAPSHOT.jar` | 19.5 MB |
+| react-nodejs-app (frontend) | `npm run build` | `my-app/build/` (static HTML/CSS/JS) | 0.5 MB |
+| react-nodejs-app (API) | `npm run build` (webpack) | `api/server.bundle.js` | 0.6 MB |
+| react-nodejs-app (full app) | `npx gulp` | `prod-build/react-nodejs.zip` | 0.3 MB |
+
+What I learned:
+- **Spring Boot jars are "fat jars"** – the app plus all its dependencies (Spring, embedded Tomcat) in one
+  file, which is why they are ~19 MB and run with just `java -jar`. A `.jar` is a zip file: the compiled
+  code is in `BOOT-INF/classes`, the dependencies in `BOOT-INF/lib`.
+- **Gradle also produces a `-plain.jar`** – only my compiled classes, without dependencies. It can't run on
+  its own; the fat jar is the one to deploy.
+- **Gradle vs Maven:** same result, different conventions – Gradle outputs to `build/libs/`, Maven to `target/`.
+- **JavaScript has no single standard artifact.** The React app compiles to static files, webpack bundles
+  the Node server and its `node_modules` into one file, and gulp zips both into a deployable package.
+- **webpack warning `Critical dependency: the request of a dependency is an expression`** comes from Express
+  loading template engines by a name only known at runtime. This app doesn't use template engines, so the
+  warning is harmless.
+- **Artifacts are not committed to Git** (see `.gitignore`) – they are rebuilt from source and belong in
+  an artifact repository, not in version control.
+
 ## Build & run
 
 **Prerequisites:** JDK 21+, Maven, Node.js 24 (npm included). Gradle is not needed – the wrapper downloads it.
