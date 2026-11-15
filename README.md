@@ -10,7 +10,7 @@ what I did, what changed, and the problems I solved along the way.
 
 | # | Module | Status |
 |---|---|---|
-| 01 | [Build & Package Manager Tools](01-build-tools) | 🟡 In progress |
+| 01 | [Build & Package Manager Tools](01-build-tools) | ✅ Completed |
 
 ## Progress – Module 01: Build & Package Manager Tools
 
@@ -19,13 +19,13 @@ what I did, what changed, and the problems I solved along the way.
 - [x] Windows Installation – Part 1
 - [x] Windows Installation – Part 2
 - [x] Build Artifact – built the Gradle, Maven and JavaScript artifacts ([notes](01-build-tools#build-artifact))
-- [ ] Build Tools for Development – add a new dependency to a project
-- [ ] Run/Start the application
-- [ ] Build JavaScript applications
-- [ ] Other Programming Languages
-- [ ] Publish Artifact
-- [ ] Build Tools & Docker
-- [ ] Build Tools & DevOps
+- [x] Build Tools for Development – managed dependencies with Gradle, Maven and npm ([notes](01-build-tools#build-tools-for-development))
+- [x] Run/Start the application ([notes](01-build-tools#run-the-application))
+- [x] Build JavaScript applications ([notes](01-build-tools#build-javascript-applications))
+- [x] Other Programming Languages ([notes](01-build-tools#other-programming-languages))
+- [x] Publish Artifact ([notes](01-build-tools#publish-artifact))
+- [x] Build Tools & Docker ([notes](01-build-tools#build-tools--docker))
+- [x] Build Tools & DevOps ([notes](01-build-tools#build-tools--devops))
 
 ## Tools used so far
 
