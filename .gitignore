@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build output
+build/
+dist/
+target/
+out/
+.gradle/
+prod-build/
+*.bundle.js
+*.bundle.js.LICENSE.txt
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local env files
+.env
+.env.*
