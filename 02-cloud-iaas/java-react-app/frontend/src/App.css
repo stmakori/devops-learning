@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f5f7fa;
+  color: #1f2933;
+}
+
+.container {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+small {
+  color: #7b8794;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #cbd2d9;
+  border-radius: 4px;
+}
+
+.count {
+  color: #7b8794;
+  font-size: 0.875rem;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.error {
+  color: #c62828;
+}

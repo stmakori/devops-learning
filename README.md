@@ -11,6 +11,7 @@ what I did, what changed, and the problems I solved along the way.
 | # | Module | Status |
 |---|---|---|
 | 01 | [Build & Package Manager Tools](01-build-tools) | ✅ Completed |
+| 02 | [Cloud & Infrastructure as a Service](02-cloud-iaas) – AWS | ✅ Completed |
 
 ## Progress – Module 01: Build & Package Manager Tools
 
@@ -27,6 +28,12 @@ what I did, what changed, and the problems I solved along the way.
 - [x] Build Tools & Docker ([notes](01-build-tools#build-tools--docker))
 - [x] Build Tools & DevOps ([notes](01-build-tools#build-tools--devops))
 
+## Progress – Module 02: Cloud & Infrastructure as a Service
+
+- [x] Introduction to Cloud & IaaS ([notes](02-cloud-iaas#cloud--iaas-in-a-nutshell))
+- [x] Set up a server on [AWS EC2](02-cloud-iaas/aws)
+- [x] Deploy the [Java + React app](02-cloud-iaas/java-react-app) on the server
+
 ## Tools used so far
 
-Java 21 · Gradle · Maven · Node.js 24 · npm · webpack · gulp · Vite · Docker · Git
+Java 21 · Gradle · Maven · Node.js 24 · npm · webpack · gulp · Vite · Docker · Git · AWS EC2 · Linux · SSH

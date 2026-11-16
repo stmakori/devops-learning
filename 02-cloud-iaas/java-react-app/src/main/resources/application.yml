@@ -1,0 +1,11 @@
+server:
+  port: 7071
+  compression:
+    enabled: true
+    min-response-size: 1
+
+spring:
+  application:
+    name: java-react-app
+  main:
+    banner-mode: off
