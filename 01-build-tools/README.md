@@ -5,6 +5,8 @@ Java (Gradle + Maven) and JavaScript (npm) applications.
 
 ## Projects
 
+Each project has its own README with commands, structure and what I changed.
+
 | Project | Build tool | Stack |
 |---|---|---|
 | [`java-gradle-app`](java-gradle-app) | Gradle 9.9 (wrapper) | Spring Boot 4.1, Java 21 |

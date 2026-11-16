@@ -1,6 +1,12 @@
-# my-app (React frontend)
+# ⚛️ my-app (React frontend)
 
-Originally bootstrapped with Create React App, migrated to **Vite** (CRA is deprecated).
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-5-6E9F18?logo=vitest&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white)
+
+The frontend for the [React + Node.js app](../README.md). It started out on Create React App and
+I moved it to **Vite** because CRA is deprecated.
 
 | Command | What it does |
 |---|---|
